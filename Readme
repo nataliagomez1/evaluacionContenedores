@@ -24,7 +24,7 @@ docker run -d -p 8080:80 juansleon/parcialdocker-app:latest
 
 ### Como se encuentra en subido en Github, también se puede construir de esta manera:
 # Clonar el repositorio
-git clone https://github.com/nataliagomez1/evaluacionContenedores
+git clone https://github.com/nataliagomez1/evaluacionContenedores.git
 cd evaluacionContenedores
 
 # Construir la imagen Docker
