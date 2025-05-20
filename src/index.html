@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder API - Usuarios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Usuarios</h1>
+        
+        <div class="controls">
+            <button id="getAllBtn">Obtener todos los usuarios</button>
+            <div class="search-container">
+                <input type="number" id="userId" placeholder="ID del usuario">
+                <button id="getByIdBtn">Buscar por ID</button>
+            </div>
+        </div>
+        
+        <div class="results">
+            <div id="loading" class="hidden">Cargando...</div>
+            <div id="error" class="hidden error"></div>
+            <div id="data"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

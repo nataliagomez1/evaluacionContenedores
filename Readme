@@ -1,0 +1,42 @@
+# Aplicación Users JsonPlaceholder
+
+## Descripción
+En esta aplicación web se visualizan los users disponibles en JSONPlaceholder.
+Se obtienen y visualizan tanto todos los users, como un user específico buscado por ID.
+
+## Integrantes del equipo
+- Natalia Andrea Gómez Garzón
+- Juan Steban Leon Cardenas
+
+## Tecnologías utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- Docker
+- Nginx
+## Instrucciones para ejecutar la aplicación
+
+### Descargar desde DockerHub
+docker pull juansleon/parcialdocker-app:latest
+
+# Ejecutar el contenedor
+docker run -d -p 8080:80 juansleon/parcialdocker-app:latest
+
+### Como se encuentra en subido en Github, también se puede construir de esta manera:
+# Clonar el repositorio
+git clone https://github.com/nataliagomez1/evaluacionContenedores
+cd evaluacionContenedores
+
+# Construir la imagen Docker
+docker build -t parcialdocker-app .
+
+# Ejecutar el contenedor
+docker run -d -p 8080:80 parcialdocker-app
+
+## Acceso a la aplicación
+Despues de seguir las instrucciones para ejecutar la aplicación, en el navegador web:
+http://localhost:8080
+
+## Funcionalidades
+- Obtener todos los usuarios: Muestra todos los usuarios disponibles en JSONPlaceholder
+- Buscar por ID: Introduce un ID de usuario y haz clic en "Buscar por ID" para ver los detalles de ese usuario específico
